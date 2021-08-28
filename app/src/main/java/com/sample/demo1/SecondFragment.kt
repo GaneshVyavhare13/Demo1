@@ -35,8 +35,10 @@ class SecondFragment : Fragment() {
         testStr?.run()
         {
             val len = this.length
+            this.plus("Ganesh")
             print("len::$len")
         }
+
 
         return binding.root
 
