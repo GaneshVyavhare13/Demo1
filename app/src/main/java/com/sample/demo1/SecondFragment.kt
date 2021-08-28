@@ -32,6 +32,12 @@ class SecondFragment : Fragment() {
             print("len::- $len")
         }
 
+        testStr?.run()
+        {
+            val len = this.length
+            print("len::$len")
+        }
+
         return binding.root
 
     }
