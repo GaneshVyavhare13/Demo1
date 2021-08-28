@@ -20,12 +20,18 @@ class SecondFragment : Fragment() {
     private val binding get() = _binding!!
     private var asd = 0
     private val testStr: String? = null
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+        savedInstanceState: Bundle?): View? {
 
         _binding = FragmentSecondBinding.inflate(inflater, container, false)
+
+        testStr?.let {
+            val len = it.length
+            print("len::- $len")
+        }
+
         return binding.root
 
     }
